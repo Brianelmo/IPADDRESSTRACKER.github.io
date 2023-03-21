@@ -57,7 +57,7 @@ function renderResults(data) {
   ispList.innerHTML = data.org; 
 
 
-  map.setView([data.latitude, data.longitude] , 13);
+  map.setView([data.latitude, data.longitude] , 16);
   marker.setLatLng([data.latitude , data.longitude]);
   marker.bindPopup(`<b>${data.ip}</b>`).openPopup();
 }
