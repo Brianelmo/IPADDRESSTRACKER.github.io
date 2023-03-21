@@ -21,8 +21,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
  
 
-marker = L.marker([-34.608585, -58.373255]).addTo(map);  
-
 const locationImage = L.icon({
   iconUrl: 'images/icon-location.svg',
   iconSize: [35, 35],
