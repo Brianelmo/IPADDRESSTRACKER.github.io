@@ -23,11 +23,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 marker = L.marker([-34.608585, -58.373255]).addTo(map);  
 
-const locationIcon = L.icon({
+const locationImage = L.icon({
   iconUrl: 'images/icon-location.svg',
   iconSize: [35, 35],
   iconAnchor: [15, 15]
-});
+}); 
+
+const marker = L.marker([0, 0], {icon: locationImage}).addTo(map);
 
 form.onsubmit = (e) => {
   e.preventDefault();
