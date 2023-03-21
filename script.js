@@ -58,7 +58,7 @@ function renderResults(data) {
 
 
   map.setView([data.latitude, data.longitude] , 13);
-  marker.setLatLang([data.latitude , data.longitude]);
+  marker.setLatLng([data.latitude , data.longitude]);
   marker.bindPopup(`<b>${data.ip}</b>`).openPopup();
 }
 
