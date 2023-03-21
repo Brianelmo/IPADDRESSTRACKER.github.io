@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1.0">   
+
+  <!--FONTFAMILY--> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  
+  <!--Styles-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/mapita.png"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+  
+  <title>IP Address Tracker</title>
+</head>
+<body>
+  <header class="header">
+    <H1 class="header_tittle">IP Address Tracker</H1> 
+    <form id="form-search" class="header-search">
+      <input id="inputsearch" class="header-input__search" type="text" placeholder="Search for any IP address or domain"> 
+
+      <button class="header-btn__search" id="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+    </form> 
+    <div class="header-data">
+    <div class="header-list">
+      <div class="list-div">
+        <h4>IP Address</h4>
+        <p class="header-list__li" id="ip"></p>
+      </div>
+      <div class="list-div">
+        <h4>Country</h4>
+        <p class="header-list__li" id="location"></p>
+      </div>
+      <div class="list-div">
+        <h4>City</h4>
+        <p class="header-list__li" id="tine-zone"></p>
+      </div>
+      <div class="list-div">
+        <h4>ISP</h4>
+        <p class="header-list__li" id="isp"></p>
+      </div>
+    </div>
+    </div>
+    <div class="header-list">
+  </header>  
+
+  <div id="map">
+
+  </div>
+ 
+
+  <script src="https://kit.fontawesome.com/d57c20a4c3.js" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script> 
+  <script src="script.js"></script>
+</body>
+</html>
